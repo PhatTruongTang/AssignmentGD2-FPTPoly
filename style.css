@@ -1,0 +1,563 @@
+@font-face {
+    font-family: "Anan";
+    src: url("fonts/AnandaBlackPersonalUseRegular-rg9Rx.ttf") format("truetype");
+}
+@font-face {
+    font-family: "BelieveIt";
+    src: url("fonts/BelieveIt-DvLE.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'VHARIS';
+    src: url('fonts/VHARIS.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'VNcorsi';
+    src: url('fonts/VNCORSI.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'tuyen-duc';
+    src: url('fonts/vps-tuyen-duc-italic.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'VHAN';
+    src: url('fonts/VHAVAN.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'vpshanoi';
+    src: url('fonts/vps-ha-noi-medium-hoa-italic.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'vpshanoi-bold';
+    src: url('fonts/vps-ha-noi-medium-hoa-bold-italic.TTF') format('truetype');
+}		
+@font-face {
+    font-family: 'vpscanthoHoa';
+    src: url('fonts/vps-can-tho-hoa.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'Supercharge';
+    src: url('fonts/SuperchargeStraightCondensed-RpVWV.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Vogu';
+    src: url('fonts/VNVOGU.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'South';
+    src: url('fonts/VNSOUTHN.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'VHHELS';
+    src: url('fonts/VHHELS.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'VNFREE';
+    src: url('fonts/VNFREE.TTF') format('truetype');
+}
+@font-face {
+    font-family: "VNCORVI";
+    src: url('fonts/VHCORVI.TTF') format('truetype');
+}
+iframe[name=page]{
+    width: 100%;
+    min-height: 400px;
+}
+body {
+    background-color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+    color: orange;
+}
+
+.container {
+    width: 25%;
+    float: left;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.column {
+    width: 25%;
+    float: left;
+}
+
+.san-pham {
+    border-radius: 10px;
+    box-shadow: 0 0 5px gray;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+.san-pham .ten {
+    font-size: larger;
+    font-variant: small-caps;
+    color: blue;
+}
+
+.san-pham img {
+    max-width: 95%;
+    height: auto;
+}
+
+.san-pham .gia {
+    color: red;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.san-pham .gia del {
+    color: gray;
+}
+
+/* Chỉ áp dụng font cho chữ được bọc trong <span class="custom-font"> */
+.custom-font {
+    font-family: "Anan", sans-serif;
+    font-weight: bold;
+}
+.custom-font2 {
+    font-family: "BelieveIt", sans-serif;
+    font-weight: bold;
+}
+.custom-font3 {
+    font-family: "tuyen-duc", sans-serif;
+    font-weight: bold;
+}
+.custom-font4 {
+    font-family: "VHAN", sans-serif;
+    font-weight: normal;
+}
+.custom-font5 {
+    font-family: "vpshanoi", sans-serif;
+    font-weight: bold;
+}
+.custom-font6 {
+    font-family: "vpshanoi-bold", sans-serif;
+    font-weight: bold;
+}
+.custom-font7 {
+    font-family: "vpscanthoHoa", sans-serif;
+    font-weight: bold;
+}
+.custom-font8 {
+    font-family: "Supercharge", sans-serif;
+    font-weight: bold;
+}
+.custom-font9 {
+    font-family: "hanoi", sans-serif;
+    font-weight: bold;
+}
+.custom-font10 {
+    font-family: "Vogu", sans-serif;
+    font-weight: bold;
+}
+.custom-font11 {
+    font-family: "South", sans-serif;
+    font-weight: bold;
+}
+.custom-font12 {
+    font-family: "VHHELS", sans-serif;
+    font-weight: bold;
+}
+.custom-font13 {
+    font-family: "VNFREE", sans-serif;
+    font-weight: bold;
+}
+.custom-font13 {
+    font-family: "VNco", sans-serif;
+    font-weight: bold;
+}
+.custom-font14 {
+    font-family: "VNCORVI", sans-serif;
+    font-weight: bold;
+}
+.doan1 {
+    color: rgb(255, 0, 0);
+    font-family: "hanoi", sans-serif;
+    font-style: italic;
+}
+.doan2 {
+    color: rgb(81, 0, 255);
+    font-family: "hanoi", sans-serif;
+    font-style: italic;
+}
+.doan3 {
+    color: green;
+    font-family: "hanoi", sans-serif;
+    font-style: italic;
+}
+.doan4 {
+    color: purple;
+    font-family: "hanoi", sans-serif;
+    font-style: italic;
+}
+.hightlight {
+    color: brown;
+    font-size: 25px;
+    font-family: "Anan", sans-serif;
+    font-style: bold;
+}
+
+@keyframes rainbowColor {
+    0% {
+        color: rgb(255, 157, 0);
+    }
+    40% {
+        color: rgb(0, 255, 21);
+    }
+    80% {
+        color: rgb(0, 38, 255);
+    }
+    
+}
+@keyframes rainbowShadow {
+    0% {
+        text-shadow: 2px 2px 10px rgb(0, 38, 255);
+    }
+    40% {
+        text-shadow: 2px 2px 10px rgb(255, 157, 0);
+
+    }
+    80% {
+        text-shadow: 2px 2px 10px rgb(0, 255, 21);
+    }
+    
+}
+@keyframes moveGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }   
+
+}
+/* Chỉ áp dụng animation cho h2 */
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    animation: rainbowColor 10s infinite alternate; /* 5s là thời gian đổi màu hoàn thành 1 chu kỳ */
+    text-align: center;
+}
+p {
+    font-family: "VHAN", sans-serif;
+    font-weight: normal;
+    white-space: pre-line;
+
+}
+h3 {
+    font-family: "VHAN", sans-serif;
+    font-weight: normal;
+}
+h1 {
+    font-weight: bold;
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, purple, brown, pink, yellow, red);            
+    background-size: 200% auto;
+    color: transparent;
+    background-clip: text;
+    animation: moveGradient 20s linear infinite;
+}
+em{
+    font-variant: small-caps;
+    font-size: 20px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+h2{
+    text-shadow: 0px 0px 5px rgb(255, 0, 0);
+}
+body{
+    text-align: center;
+}
+.menu > a {
+    font-variant: small-caps;
+    color: blue !important; /* Liên kết thường: màu xanh dương */
+    text-decoration: none;
+    font-size: 30px;
+    margin: 0 5px;
+}
+
+.menu > a:visited {
+    color: green !important; /* Khi đã nhấp vào: màu xanh lá */
+}
+
+.menu > a:hover {
+    color: red !important; /* Khi di chuột vào: màu đỏ */
+    text-decoration: underline;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    --color1: #ffffff;
+    --color2: #000000;
+}
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    background-color: var(--color2);
+    padding: 12px 24px;
+}
+.logo img{
+    width: 250px;
+    height: 100px;
+}
+.menu {
+    display: flex;
+}
+.menu li {
+    padding-left: 30px;
+}
+/* Tăng kích thước menu chính */
+.menu li a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color1);
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 18px;/*Tăng cỡ chữ*/
+    padding: 15px 20px;/*Tăng Khoảng cách*/
+}
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color1);
+    transition: 0.15s ease-in-out; 
+}
+.menu li a:hover::after {
+    width: 100%;
+}
+.open-menu , .close-menu {
+    position: absolute;
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 1.5rem; 
+    display: none;
+}
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+#check {display: none;}
+@media (max-width: 610px) {
+    /* Menu chính */    
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 250px; /*Điều chỉnh chiều rộng*/
+        height: 100vh;
+        background-color: var(--color2);
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        transform: translateX(100%);
+        opacity: 0;
+        z-index: 1000;
+        box-shadow: -5px 0 10px rgba(0, 0, 0, 0.3);
+        
+    }
+    .menu li {
+        margin-top: 40px;
+    }
+    .menu li a {
+        display: block;
+        padding: 12px 20px;
+        font-size: 18px;
+        color: var(--color1);
+        text-decoration: none;
+        transition: 0.2s;
+    }
+    .menu li a:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+    }
+    /*Hiển thị nút mở menu*/
+    .open-menu {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        font-size: 30px;
+        cursor: pointer;
+        z-index: 1100;
+        display: block;
+        color: var(--color1);
+    } 
+    /*Nút đóng menu*/
+    .close-menu {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 30px;
+        cursor: pointer;
+        color: var(--color1);
+        display: none;
+    }
+    /*Khi menu được mở, ẩn open-menu và hiển thị close-menu*/
+    #check:checked ~ .open-menu {
+        display: none;
+    }
+    #check:checked ~ .menu .close-menu {
+        display: block;
+    }
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav ul li {
+    position: relative;
+    margin-right: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px;
+    display: block;
+}
+/* Menu con hiển thị khi hover */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #000000;
+    list-style: none;
+    width: 200px;
+    font-size: 12px; /* Giảm kích thước chữ */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s; /* Hiển thị từ từ */    
+}
+.dropdown-menu li {
+    padding: 5px 15px; /* Căn lề chữ sang trái */
+    text-align: left; /* Đảm bảo chữ nằm về bên trái */
+    position: relative;
+}
+/* Căn chỉnh submenu để không bị lệch */
+.dropdown-menu li a {
+    color: #ffffff;
+    padding: 10px;
+    display: block;
+    transition: backround 0.3s;
+    font-size: 12px;/* Giảm kích thước chữ */
+    padding: 10px 0px; /* Điều chỉnh khoảng cách nếu cần */
+
+}
+.submenu {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background: white;
+    list-style: none;
+    padding: 0;
+    border: 1px solid #ddd;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s; /* Hiển thị từ từ */    
+}
+
+.dropdown-menu li .submenu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #333;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.2);
+}
+.dropdown-menu li a:hover {
+    background-color: #444;
+}
+/* Khi hover vào menu con,thêm menu con sẽ dần dần xuất hiện */
+.dropdown-menu li:hover .submenu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+/* Khi chuột rời khỏi, menu con dần biến mất */
+.dropdown-menu li:not(:hover) .submenu {
+    display: block;
+    opacity: 0;
+    visibility: visible;
+}
+/* Khi hover vào GIỚI THIỆU, menu con sẽ dần dần xuất hiện */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+/* Khi chuột rời khỏi, menu con dần biến mất */
+.dropdown:not(:hover) .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+}
+footer {
+    background-color: #192A56;/*Màu xanh đậm*/
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 10px solid orange;
+}
+/* Phần bên trái */
+.footer-left {
+    max-width: 300px;
+    text-align: left;
+}
+
+/* Phần bên phải */
+.footer-right {
+    display: flex;
+    gap: 40px;
+}
+.footer-column {
+    text-align: left;
+}
+/* Dòng dưới cùng */
+.footer-bottom {
+    background-color: #0D1A35;
+    padding: 10px;
+    margin-top: 10px;
+    border-top: 2px solid orange;
+}
+/* Để footer luôn nằm ở dưới cùng */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+#content-container {
+    flex-grow: 1;
+    min-height: 0;
+}
+#contentFrame {
+    width: 100%;
+    min-height: 600px;
+    height: calc(100vh - 200px); /*Điều chình dựa trên header/footer*/
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="images/fpoly_logoicon.png"/> 
+</head>
+<body>
+
+    <!-- Header + Menu -->
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li class="logo">
+                    <a href="#"><img src="images/fpoly_logo-removebg-preview (1).png" width="200" height="150" alt="logo"></a>
+                </li>
+                <input type="checkbox" id="check">
+                <label for="check" class="open-menu">
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+                <span class="menu">
+                    <li><a href="#" onclick="loadPage('web/Login.html')">Đăng nhập</a></li>    
+                    <li><a href="#" onclick="loadPage('web/TrangChu.html')">Trang Chủ</a></li>    
+                    
+                    <!-- Dropdown menu Giới thiệu -->
+                    <li class="dropdown">
+                        <a href="#">Giới thiệu</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown">
+                                <a href="#" onclick="loadPage('web/CNTT.html')">Ngành Công nghệ thông tin</a>
+                                <ul class="submenu">
+                                    <li><a href="#" onclick="loadPage('web/PhanMem.html')">Phát triển phần mềm</a></li>
+                                    <li><a href="#" onclick="loadPage('web/LapTrinhWeb.html')">Lập trình web</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" onclick="loadPage('web/sodotochuc.html')">Sơ đồ tổ chức</a></li>
+                        </ul>
+                    </li>   
+                    
+                    <li><a href="#" onclick="loadPage('web/Lienhe.html')">Liên hệ</a></li>
+                    <li><a href="#" onclick="loadPage('web/GopY.html')">Góp ý</a></li>
+                    <li><a href="#" onclick="loadPage('web/HoiDap.html')">Hỏi đáp</a></li>
+                </span>
+
+                <!-- Nút đóng menu -->
+                <label for="check" class="close-menu">
+                    <i class="fas fa-times"></i>
+                </label>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Nội dung chính (Iframe) -->
+    <div id="content-container">
+        <iframe id="contentFrame" src="web/TrangChu.html" width="100%" height="600px" style="border: none"></iframe>
+    </div>
+
+    <!-- Script điều khiển iframe -->
+    <script>
+        function loadPage(page) {
+            document.getElementById("contentFrame").src = page;
+        }
+    </script>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <li class="logo"><a href="#"><img src="images/fpoly.png" width="200" height="150" alt="logo"></a></li>
+                <br>
+                <h2>THÔNG TIN LIÊN HỆ</h2>
+                <p>📞 Điện thoại: 0963 400 865</p>
+                <p>📧 Email: Phothongcaodang@fpt.edu.vn</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <div class="footer-column">
+                    <h3><strong>📍 KHU VỰC MIỀN BẮC</strong></h3>
+                    <p>Hà Nội 📌 |📞 (024) 8582 0808</p>
+                    <p>Thái Nguyên 📌 |📞 091 532 9213</p>
+                    <p>Hải Phòng 📌 |📞 091 543 1313</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3><strong>📍 KHU VỰC MIỀN TRUNG</strong></h3>
+                    <p>Đà Nẵng 📌 |📞 023 6371 0999 – 094 302 5282</p>
+                    <p>Nghệ An 📌 |📞 0963 400 865 – 0988 299 302</p>
+                    <p>Nha Trang 📌 |📞 0258 351 9939</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3><strong>📍 KHU VỰC MIỀN NAM</strong></h3>
+                    <p>TP. Hồ Chí Minh 📌 |📞 0901 660 002 – 028 6686 6486</p>
+                    <p>Bình Dương 📌 |📞 0274 730 0999</p>
+                    <p>Cần Thơ 📌 |📞 098 388 1100</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Powered by <strong>FPT</strong></p>
+        </div>
+    </footer>
+
+</body>
+</html>
